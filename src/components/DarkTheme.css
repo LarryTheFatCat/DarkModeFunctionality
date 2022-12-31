@@ -1,0 +1,26 @@
+input,
+label {
+    margin: 0.2cm;
+}
+
+label {
+    cursor: pointer;
+}
+
+label:hover {
+    color: #646cff;
+}
+
+input:hover {
+    border-color: #646cff;
+}
+
+.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+.light {
+    background-color: #fff;
+    color: #333;
+}
