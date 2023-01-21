@@ -3,11 +3,15 @@ import './DarkTheme.css';
 
 
 export const ThemeSwitcher = () => {
-    const [theme, setTheme] = useState('light');
+
+    const [theme, setTheme] = useState(
+        localStorage.getItem('theme') || 'light');
     const toggleTheme = () => {
         if (theme === 'light') {
+            localStorage.setItem('theme', 'dark');
             setTheme('dark');
         } else if(theme === 'dark') {
+            localStorage.setItem('theme', 'light')
             setTheme('light');
         }
     };
